@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Kiển Tra tam giác</title>
+</head>
+
+<body>
+    <script language="javascript">
+        var a = prompt("Nhập vào cạnh a:");
+        var b = prompt("Nhập vào cạnh b:");
+        var c = prompt("Nhập vào cạnh c:");
+
+        if (a * a == b * b + c * c || b * b == a * a + c * c || 
+            c * c == a * a + b * b) {
+            document.writeln("Tam giác ABC là tam giác vuông");
+        } else if (a == b && b == c) {
+            document.writeln("Tam giác ABC là tam giác đều");
+        } else if (a == b || a == c || b == c) {
+            document.writeln("Tam giác ABC là tam giác cân");
+        } else {
+            document.writeln("Tam giác ABC là tam giác thường");
+        }
+    </script>
+</body>
+</html>
